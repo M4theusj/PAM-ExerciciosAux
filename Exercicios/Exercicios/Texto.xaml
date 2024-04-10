@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Texto"
+             Title="Texto">
+    <VerticalStackLayout>
+        <Label 
+            Text="Altere o tamanho do texto"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Hello, world!"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            x:Name="TextWorld"/>
+
+        <Slider
+            x:Name="TextChange"
+            Minimum="0"
+            Maximum="100"
+            ValueChanged="TextChange_ValueChanged"/>
+
+    </VerticalStackLayout>
+</ContentPage>

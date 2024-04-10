@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Desconto"
+             Title="Desconto">
+    <VerticalStackLayout>
+        <Label 
+            Text="Descontos"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="ValorProduto"
+            Placeholder="Digite o valor da compra aqui!"
+            TextChanged="ValorProduto_TextChanged"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+        <Label
+            x:Name="ProductValue"
+            Text="Valor do produto: "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+
+        <Label
+            Text="Total"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+        <Label
+            Text="0.0"
+            x:Name="TotalValue"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+        <Slider
+            Minimum="0"
+            Maximum="100"
+            ValueChanged="Slider_ValueChanged"
+            />
+        <Label
+            Text="Valor do desconto: 0"
+            x:Name="SliderValor"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+
+
+    </VerticalStackLayout>
+</ContentPage>

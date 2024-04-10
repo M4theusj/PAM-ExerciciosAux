@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Temperatura"
+             Title="Temperatura">
+    <VerticalStackLayout>
+        <Label 
+            Text="Temperatura"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Label
+            Text="Escolha uma temperatura em celsius!"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Slider
+            Minimum="0"
+            Maximum="100"
+            x:Name="CelsiusSlider"
+            ValueChanged="CelsiusSlider_ValueChanged"/>
+        <Label
+             Text="0"
+             x:Name="CelsiusLabel" 
+             HorizontalOptions="Center"
+             VerticalOptions="Center"
+            />
+
+        <Label
+            Text="Temperatura em Fahrenheit: "
+            x:Name="FarenTemp"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+        <Label
+            Text="Temperatura em Kelvin: "
+            x:Name="KelvinTemp"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+            
+    </VerticalStackLayout>
+</ContentPage>

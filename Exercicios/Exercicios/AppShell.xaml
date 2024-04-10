@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Exercicios.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Exercicios"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Exercicios"
+    TabBarBackgroundColor="BlueViolet"
+    >
+
+    <TabBar>
+        
+
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent
+        Title="Calculadora"
+        ContentTemplate="{DataTemplate local:Calculadora}"
+        Route="Calculadora"
+        Icon="calc.svg"    
+            />
+
+        <ShellContent
+        Title="Random Game"
+        ContentTemplate="{DataTemplate local:Randomico}"
+        Route="Randomico" />
+
+        <ShellContent
+        Title="Contatos"
+        ContentTemplate="{DataTemplate local:Contatos}"
+        Route="Contatos" />
+
+        <ShellContent
+        Title="Moedas"
+        ContentTemplate="{DataTemplate local:Moedas}"
+        Route="Moedas" />
+
+        <ShellContent
+        Title="Opacidade"
+        ContentTemplate="{DataTemplate local:Opacidade}"
+        Route="Opacidade" />
+
+        <ShellContent
+        Title="Texto"
+        ContentTemplate="{DataTemplate local:Texto}"
+        Route="Texto" />
+
+        <ShellContent
+        Title="Desconto"
+        ContentTemplate="{DataTemplate local:Desconto}"
+        Route="Desconto"
+        />
+
+        <ShellContent
+        Title="Temperatura"
+        ContentTemplate="{DataTemplate local:Temperatura}"
+        Route="Temperatura"
+        
+            />
+
+    </TabBar>
+
+</Shell>

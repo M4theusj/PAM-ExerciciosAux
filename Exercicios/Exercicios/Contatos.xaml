@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Contatos"
+             Title="Contatos">
+    <VerticalStackLayout>
+        <Label 
+            Text="Adicione aqui seus contatos!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+        <Entry
+            Placeholder="Digite aqui o nome do contato!"
+            x:Name="ContactName"
+            />
+        <Entry
+            Placeholder="Digite aqui o número do contato!"
+            x:Name="ContactNumber"
+            />
+        <Button
+            x:Name="AddContatos"
+            Text="Clique aqui para adicionar contatos!"
+            Clicked="AddContatos_Clicked"
+            />
+        
+        <ListView x:Name="myListView">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Seus contatos irão aparecer aqui!</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

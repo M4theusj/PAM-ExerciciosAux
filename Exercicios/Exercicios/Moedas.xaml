@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercicios.Moedas"
+             Title="Moedas">
+    <VerticalStackLayout>
+        <Label 
+            Text="Conversor de moedas!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry
+            Placeholder="Digite o valor em real aqui!"
+            x:Name="RealCoin"
+            />
+
+        <Button
+            Text="Dolar"
+            x:Name="DolarCoin"
+            Clicked="DolarCoin_Clicked"/>
+
+        <Button
+            Text="Iene"
+            x:Name="IeneCoin"
+            Clicked="IeneCoin_Clicked"/>
+
+        <Button
+            Text="Euro"
+            x:Name="EuroCoin"
+            Clicked="EuroCoin_Clicked"/>
+        <Button
+            Text="Libra"
+            x:Name="Libra"
+            Clicked="Libra_Clicked"/>
+
+        <Label
+            Text="0.0"
+            x:Name="ConvCoin"/>
+    </VerticalStackLayout>
+</ContentPage>
